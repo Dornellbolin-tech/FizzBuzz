@@ -13,11 +13,13 @@
 
     <script>
         for (var i = 1; i <= 100; i++) {
-            document.getElementById('result').innerHTML += i;
-            document.getElementById('result').innerHTML += "<br>"
+            
             if (i % 3 == 0){
                 document.getElementById('result').innerHTML += "fizz";
+                document.getElementById('result').innerHTML += "<br>"
             }
+            else{document.getElementById('result').innerHTML += i;
+            document.getElementById('result').innerHTML += "<br>"}
         }
     </script>
 </body>

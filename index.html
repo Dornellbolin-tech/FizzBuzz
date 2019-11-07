@@ -13,21 +13,21 @@
 
     <script>
         for (var i = 1; i <= 100; i++) {
-
-            if (i % 3 == 0) {
-                document.getElementById('result').innerHTML += "Fizz";
-                document.getElementById('result').innerHTML += "<br>";
-            } 
-            else if (i % 5 == 0) {
-                document.getElementById('result').innerHTML += "Buzz";
-                document.getElementById('result').innerHTML += "<br>";
-            } 
-            if(i % 3 == 0 && i % 5 == 0){
+            if (i % 3 == 0 && i % 5 == 0) {
                 document.getElementById('result').innerHTML += "Fizz Buzz";
                 document.getElementById('result').innerHTML += "<br>";
-            } 
-            else {
-                document.getElementById('result').innerHTML += i;
+            } else if (i % 3 == 0) {
+                document.getElementById('result').innerHTML += "Fizz";
+                document.getElementById('result').innerHTML += "<br>";
+            } else if (i % 5 == 0) {
+                document.getElementById('result').innerHTML += "Buzz";
+                document.getElementById('result').innerHTML += "<br>";
+            } else if (i % 7 == 0) {
+                document.getElementById('result').innerHTML += "Fizz";
+                document.getElementById('result').innerHTML += "<br>";
+            } else {
+                var hexiDecimal = i.toString(16);
+                document.getElementById('result').innerHTML += hexiDecimal;
                 document.getElementById('result').innerHTML += "<br>"
             }
         }
